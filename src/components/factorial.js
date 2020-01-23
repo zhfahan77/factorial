@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Factorial() {
+const Factorial = () => {
   const [ givenNumber, setGivenNumber] = useState(0);
   const [ factorial, setFactorial ] = useState(0);
 
@@ -42,3 +42,5 @@ export default function Factorial() {
     </div>
   );
 }
+
+export default Factorial
