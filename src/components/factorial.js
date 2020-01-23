@@ -5,12 +5,12 @@ export default function Factorial() {
   const [ factorial, setFactorial ] = useState(0);
 
   const factorialize = (num) => {
-    if (num < 0) 
-          return -1;
-    else if (num === 0) 
-        return 1;
-    else {
-        return (num * factorialize(num - 1));
+    if (num < 0) {
+      return -1;
+    } else if (num === 0) {
+      return 1;
+    } else {
+      return (num * factorialize(num - 1));
     }
   }
 
